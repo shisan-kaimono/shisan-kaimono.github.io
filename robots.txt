@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shisan-kaimono.github.io/sitemap.xml
