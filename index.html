@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>資産になる買い物 | 長く効く道具と本のレビュー</title>
+<meta name="description" content="消費を資産に変える、大人のための買い物ガイド。長く使える本物の道具・書籍・ガジェットを、資産形成の視点で厳選してレビューします。">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="資産になる買い物">
+<meta property="og:description" content="消費を資産に変える、大人のための買い物ガイド。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%98%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --navy: #0b1f3a;
+    --navy-light: #15325e;
+    --gold: #c9a961;
+    --gold-light: #e3c988;
+    --paper: #faf8f3;
+    --ink: #1a1a1a;
+    --sub: #666;
+    --line: #e5e0d4;
+    --bg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0f1420;
+      --ink: #e8e5de;
+      --sub: #a8a39a;
+      --line: #2a2f3d;
+      --bg: #0b0f18;
+      --navy: #e3c988;
+      --navy-light: #c9a961;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body {
+    font-family: system-ui, -apple-system, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--navy); text-decoration: none; transition: opacity .2s; }
+  a:hover { opacity: .7; }
+
+  /* Header */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .nav {
+    max-width: 1100px; margin: 0 auto;
+    padding: 16px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    gap: 16px;
+  }
+  .logo {
+    font-size: 18px; font-weight: 700; color: var(--navy);
+    letter-spacing: .02em;
+  }
+  .logo-mark { color: var(--gold); margin-right: 4px; }
+  .nav-links {
+    display: flex; gap: 24px; list-style: none;
+    font-size: 14px;
+  }
+  .nav-links a { color: var(--sub); }
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+    color: #fff;
+    padding: 100px 24px 120px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 20% 30%, rgba(201,169,97,.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(201,169,97,.1) 0%, transparent 50%);
+  }
+  .hero-inner { position: relative; max-width: 720px; margin: 0 auto; }
+  .hero-tag {
+    display: inline-block;
+    font-size: 12px; letter-spacing: .3em;
+    color: var(--gold-light);
+    margin-bottom: 24px;
+    border: 1px solid var(--gold);
+    padding: 6px 16px;
+    border-radius: 100px;
+  }
+  .hero h1 {
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    letter-spacing: .02em;
+  }
+  .hero h1 em {
+    font-style: normal;
+    color: var(--gold-light);
+    border-bottom: 2px solid var(--gold);
+  }
+  .hero p {
+    font-size: 16px;
+    opacity: .85;
+    max-width: 560px;
+    margin: 0 auto 40px;
+  }
+  .cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 14px 32px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: .05em;
+  }
+  .cta:hover { background: var(--gold-light); opacity: 1; }
+
+  /* Section common */
+  section { padding: 80px 24px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .section-head { text-align: center; margin-bottom: 56px; }
+  .section-head .label {
+    font-size: 12px; letter-spacing: .3em;
+    color: var(--gold);
+    display: block; margin-bottom: 12px;
+  }
+  .section-head h2 {
+    font-size: clamp(24px, 4vw, 32px);
+    color: var(--navy);
+    font-weight: 700;
+    letter-spacing: .02em;
+  }
+
+  /* Concept */
+  .concept { background: var(--paper); }
+  .concept-text {
+    max-width: 680px; margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+  }
+  .concept-text p + p { margin-top: 20px; }
+
+  /* Categories */
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+  }
+  .cat-card {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform .2s, box-shadow .2s;
+    background: var(--bg);
+  }
+  .cat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(11,31,58,.08);
+  }
+  .cat-icon { font-size: 40px; margin-bottom: 16px; }
+  .cat-card h3 {
+    font-size: 16px;
+    color: var(--navy);
+    margin-bottom: 8px;
+    letter-spacing: .02em;
+  }
+  .cat-card p { font-size: 13px; color: var(--sub); }
+
+  /* Articles */
+  .articles { background: var(--paper); }
+  .article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .article-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 28px;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .article-meta {
+    display: flex; align-items: center; gap: 12px;
+    font-size: 12px; color: var(--sub);
+  }
+  .article-cat {
+    background: var(--navy);
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 3px;
+    font-size: 11px;
+    letter-spacing: .05em;
+  }
+  .article-card h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--navy);
+    font-weight: 700;
+  }
+  .article-card p { font-size: 14px; color: var(--sub); }
+  .article-status {
+    margin-top: auto;
+    font-size: 12px;
+    color: var(--gold);
+    letter-spacing: .1em;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+  }
+
+  /* About */
+  .about-text {
+    max-width: 640px; margin: 0 auto;
+  }
+  .about-text dl {
+    border-top: 1px solid var(--line);
+  }
+  .about-text dt, .about-text dd {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .about-text dt {
+    font-weight: 700;
+    color: var(--navy);
+    font-size: 14px;
+    letter-spacing: .05em;
+  }
+  .about-text dd { font-size: 15px; margin-left: 0; }
+  @media (min-width: 640px) {
+    .about-text dl {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 0 24px;
+    }
+    .about-text dt, .about-text dd { padding: 20px 0; }
+  }
+
+  /* Privacy */
+  .privacy { background: var(--paper); }
+  .privacy-content {
+    max-width: 720px; margin: 0 auto;
+    font-size: 14px;
+  }
+  .privacy-content h3 {
+    font-size: 15px;
+    color: var(--navy);
+    margin-top: 32px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--line);
+  }
+  .privacy-content h3:first-child { margin-top: 0; }
+  .privacy-content p { color: var(--sub); line-height: 1.9; }
+
+  /* Contact */
+  .contact-box {
+    max-width: 520px; margin: 0 auto;
+    text-align: center;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 48px 32px;
+  }
+  .contact-box p { color: var(--sub); margin-bottom: 24px; font-size: 14px; }
+  .mail-link {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    padding: 12px 24px;
+    border: 2px solid var(--navy);
+    border-radius: 4px;
+  }
+  .mail-link:hover { background: var(--navy); color: var(--bg); opacity: 1; }
+
+  /* Footer */
+  footer {
+    background: var(--navy);
+    color: #fff;
+    padding: 48px 24px 32px;
+    text-align: center;
+  }
+  footer .logo { color: var(--gold-light); margin-bottom: 16px; display: block; }
+  footer p { font-size: 12px; opacity: .7; line-height: 1.8; }
+  footer .disclosure {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="logo"><span class="logo-mark">◆</span>資産になる買い物</div>
+    <ul class="nav-links">
+      <li><a href="#concept">コンセプト</a></li>
+      <li><a href="#categories">カテゴリー</a></li>
+      <li><a href="#articles">記事</a></li>
+      <li><a href="#about">運営者</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-inner">
+    <span class="hero-tag">LONG-LASTING CHOICES</span>
+    <h1>その買い物は、<br>十年後の<em>資産</em>になるか。</h1>
+    <p>長く使える本物の道具、人生を変える本、生産性を押し上げるガジェット。<br>消費を資産に変える、大人のための買い物ガイド。</p>
+    <a href="#categories" class="cta">カテゴリーを見る</a>
+  </div>
+</section>
+
+<section id="concept" class="concept">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">CONCEPT</span>
+      <h2>買い物の基準を、「安さ」から「長さ」へ。</h2>
+    </div>
+    <div class="concept-text">
+      <p>年間に使うお金の総額は、人生で数千万円にのぼります。そのうち、どれだけが「資産」として残っているでしょうか。</p>
+      <p>十年使えるチェアは、三年で壊れる椅子を三回買うより安い。一冊の良書は、十万円のセミナーより深い気づきをくれる。</p>
+      <p>このサイトは、そんな「資産になる買い物」だけを選び抜いて紹介する場所です。短期的な流行や広告に流されず、本当に長く効くものを。</p>
+    </div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">CATEGORIES</span>
+      <h2>四つの入口から、資産を選ぶ。</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card">
+        <div class="cat-icon">🪑</div>
+        <h3>WORKSPACE</h3>
+        <p>働く環境こそ最大の投資。<br>机・椅子・モニター周り。</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">📚</div>
+        <h3>BOOKS</h3>
+        <p>投資・副業・経営の<br>読み継がれる名著。</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">💡</div>
+        <h3>GADGETS</h3>
+        <p>生産性を押し上げる<br>仕事道具としての最新機器。</p>
+      </div>
+      <div class="cat-card">
+        <div class="cat-icon">✒️</div>
+        <h3>STATIONERY</h3>
+        <p>毎日触れるからこそ、<br>一生ものを選ぶ文具。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="articles" class="articles">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">LATEST</span>
+      <h2>記事一覧</h2>
+    </div>
+    <div class="article-list">
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="article-cat">WORKSPACE</span>
+          <span>Coming soon</span>
+        </div>
+        <h3>【2026年版】高級デスクチェアおすすめ5選|十年座り続けられる本物の椅子</h3>
+        <p>デスクワークの時間が人生の多くを占める今、椅子は最大の生産性投資です。実際に試す価値のある高級モデルだけを厳選。</p>
+        <div class="article-status">▸ 近日公開</div>
+      </article>
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="article-cat">BOOKS</span>
+          <span>Coming soon</span>
+        </div>
+        <h3>資産形成を加速させる投資・副業の必読書10冊|不動産・株・事業のバイブル</h3>
+        <p>セミナーや情報商材より、まず読むべき本があります。実際に資産を築いた人々が繰り返し推奨する定番書だけを紹介。</p>
+        <div class="article-status">▸ 近日公開</div>
+      </article>
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="article-cat">WORKSPACE</span>
+          <span>Coming soon</span>
+        </div>
+        <h3>書斎を「利益を生む場所」に変えるデスク周り完全ガイド2026</h3>
+        <p>デスク・モニター・照明・ケーブル管理まで、集中力と成果を最大化する環境の作り方。初期投資ごとの最適解を提示。</p>
+        <div class="article-status">▸ 近日公開</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">ABOUT</span>
+      <h2>運営者について</h2>
+    </div>
+    <div class="about-text">
+      <dl>
+        <dt>運営者</dt>
+        <dd>資産家ノート(匿名)</dd>
+        <dt>プロフィール</dt>
+        <dd>長期視点での資産形成を実践する個人。日々の買い物を「消費」ではなく「資産形成の一部」として捉える習慣から、このサイトを立ち上げました。</dd>
+        <dt>発信の方針</dt>
+        <dd>流行や広告ではなく、長く使える・長く効くものだけを紹介します。実際に自分や周囲で使われ、評価が定着しているものを基準に選定します。</dd>
+        <dt>お問い合わせ</dt>
+        <dd>記事に関するご質問・ご指摘は<a href="#contact">お問い合わせフォーム</a>よりお願いいたします。</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="privacy" class="privacy">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">PRIVACY POLICY</span>
+      <h2>プライバシーポリシー</h2>
+    </div>
+    <div class="privacy-content">
+      <h3>個人情報の取り扱いについて</h3>
+      <p>当サイトでは、お問い合わせフォームを通じて取得したメールアドレス等の個人情報を、お問い合わせへの返信以外の目的で使用することはありません。取得した情報は適切に管理し、第三者への提供は行いません。</p>
+
+      <h3>アクセス解析ツールについて</h3>
+      <p>当サイトでは、サイトの利用状況を把握するためにアクセス解析ツールを使用する場合があります。これらのツールは、Cookieを使用して匿名の情報を収集しますが、個人を特定する情報は含まれません。Cookieの使用はブラウザの設定から拒否することができます。</p>
+
+      <h3>アフィリエイトプログラムの利用について</h3>
+      <p>当サイトは、楽天アフィリエイトおよびその他のアフィリエイトプログラムに参加しています。各種アフィリエイトプログラムにより提供される広告リンクを経由して商品やサービスが購入された場合、当サイトは広告主から成果報酬を受け取ることがあります。紹介する商品・サービスは、報酬の有無にかかわらず、サイトの方針に沿って選定しています。</p>
+
+      <h3>免責事項</h3>
+      <p>当サイトに掲載する情報は、記事執筆時点で正確性に注意して記載していますが、その正確性・完全性を保証するものではありません。価格・仕様・在庫状況等は変動する場合があるため、ご購入の際は必ず販売元のサイトで最新情報をご確認ください。当サイトの情報を利用して生じた損害について、当サイトは一切の責任を負いません。</p>
+
+      <h3>著作権について</h3>
+      <p>当サイトに掲載しているテキスト・画像等の著作権は、当サイトまたは正当な権利者に帰属します。無断での転載・複製を禁止します。引用の際は出典を明記のうえ、当サイトへのリンクを設置してください。</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="label">CONTACT</span>
+      <h2>お問い合わせ</h2>
+    </div>
+    <div class="contact-box">
+      <p>記事に関するご質問・ご指摘・取り上げてほしい商品のご提案など、お気軽にご連絡ください。通常3営業日以内に返信いたします。</p>
+      <a href="mailto:info.estgroup@gmail.com" class="mail-link">info.estgroup@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="logo"><span class="logo-mark">◆</span>資産になる買い物</div>
+  <p>長く使える本物の道具・書籍・ガジェットを、資産形成の視点でレビューするサイトです。</p>
+  <div class="disclosure">
+    <p>当サイトは楽天アフィリエイト等のアフィリエイトプログラムに参加しています。<br>&copy; 2026 資産になる買い物. All Rights Reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
